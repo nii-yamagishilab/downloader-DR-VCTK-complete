@@ -53,8 +53,13 @@ Channel ID    Microphone            Quality
 
 Python scripts for recording the DR-VCTK and making the small preprocessed version 
 of the recorded dataset are in src folder. The scripts are compatible with
-Python 2.7 or Python 3.8. You can install the requirements either to your virtualenv 
-via conda with:
+Python 2.7 or Python 3.8. 
+
++=============================================================================+
+| Downloader usage                                                            |
++=============================================================================+
+
+You can install the requirements through virtualenv or conda:
 
 ```
 conda env create -f requirement.yml
