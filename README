@@ -59,7 +59,10 @@ Python 2.7 or Python 3.8.
 | Downloader usage                                                            |
 +=============================================================================+
 
-You can install the requirements through virtualenv or conda:
+This downloader works on Linux platform with basic utilities (i.e., wget, unzip).
+
+The downloader itself requires a few Python dependency, which can installed 
+through virtualenv or conda:
 
 ```
 conda env create -f requirement.yml
