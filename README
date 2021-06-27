@@ -1,0 +1,71 @@
++=============================================================================+
+| Device Recorded VCTK                                                        |
++=============================================================================+
+This dataset is device recorded version of VCTK dataset [1] on common consumer 
+devices (laptop, tablet and smartphone) in office environment. We name it as 
+Device Recorded VCTK (DR-VCTK). 
+
+This downloader will download the complete DR-VCTK dataset (~250 GB).
+A small subset of DR-VCTK is available at https://doi.org/10.7488/ds/2316.
+
+Clean VCTK audio files and orthographic transcriptions are publicly available here: 
+http://homepages.inf.ed.ac.uk/jyamagis/release/VCTK-Corpus.tar.gz
+
+Reference:
+[1] Christophe Veaux, Junichi Yamagishi, and Simon King, “The voice bank corpus:
+Design, collection and data analysis of a large regional accent speech database,
+” in Oriental COCOSDA held jointly with 2013 Conference on Asian Spoken Language
+Research and Evalua- tion (O-COCOSDA/CASLRE), 2013 International Conference. 
+IEEE, 2013, pp. 1–4.
+
++=============================================================================+
+| Dataset Description                                                         |
++=============================================================================+
+This dataset contains 109 English speakers with different accents. There are 
+around 400 sentences available from each speaker. For this recording, 8 different
+microphones were used. Type and quality of the selected microphones are shown in
+the dataset structure section. Bose 404600 was used as a high quality speaker and
+it was set in the 2 meters distance from the microphones. Recording was done in 
+the medium size office in two background noise conditions (when the window was 
+opened or closed). 
+
++=============================================================================+
+| Dataset Structure                                                           |
++=============================================================================+
+This dataset contains two folders "DR-VCTK_Office1_ClosedWindow" and 
+"DR-VCTK_Office1_OpenedWindow" for the close and open window conditions. Each 
+of these folders, containes 109 folders for speakers and each speaker in average 
+has near 400 utterances. Each wav file contains 8 channels. Each channel has 
+different delay and need to be aligned with clean sample. Type and quality of 
+the selected microphones for these channels are shown in the table below:
+
+-----------------------------------------------
+Channel ID    Microphone            Quality    
+-----------------------------------------------    
+1             MacBook Air (left)    High
+2             MacBook Air (right)   High
+3             MiC                   Medium
+4             Blue Snowball         Medium
+5             iPhone 5S (left)      High
+6             iPhone 5S (right)     High
+7             iPad (left)           Medium
+8             iPad (right)          Medium
+
+Python scripts for recording the DR-VCTK and making the small preprocessed version 
+of the recorded dataset are in src folder. The scripts are compatible with
+Python 2.7 or Python 3.8. You can install the requirements either to your virtualenv 
+via conda with:
+
+```
+conda env create -f requirement.yml
+
+conda activate downloader-DR-VCTK
+
+python downloader-DR-VCTK.py
+```
+
++=============================================================================+
+| Data Creators                                                               |
++=============================================================================+
+Sarfjoo, Seyyed Saeed    E-mail: saeed.sarfjoo@ozu.edu.tr
+Yamagishi, Junichi       E-mail: jyamagis@nii.ac.jp 

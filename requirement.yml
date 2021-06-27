@@ -1,0 +1,9 @@
+name: downloader-DR-VCTK
+channels:
+  - defaults
+  - conda-forge
+  - anaconda
+dependencies:
+  - python=3.8
+  - anaconda::openpyxl
+  - conda-forge::tqdm
