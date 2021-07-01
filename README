@@ -77,3 +77,11 @@ python downloader-DR-VCTK.py
 +=============================================================================+
 Sarfjoo, Seyyed Saeed    E-mail: saeed.sarfjoo@ozu.edu.tr
 Yamagishi, Junichi       E-mail: jyamagis@nii.ac.jp 
+
+
++=============================================================================+
+| Acknowledgement                                                              |
++=============================================================================+
+
+An initial version of downloader-DR-VCTK.py was written by Benedikt Wimmer. 
+
